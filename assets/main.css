@@ -27,6 +27,25 @@
     border-right: 2px solid #ccc;
 }
 
+.app_question {
+    float: left;
+    min-width: 7%;
+    border: 2px solid #ccc;
+    padding: 2px;
+    margin: 3px;
+}
+
+.app_question .slider {
+    height: 200px;
+}
+
+.app_question input {
+    border:0;
+    color:#f6931f;
+    font-weight:bold;
+    width: 25px;
+}
+
 /* overriding bootstrap's stuff */
 .row-fluid {
     margin-left: 40px;
