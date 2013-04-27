@@ -6,6 +6,8 @@
 
         <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
         <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/jquery-ui-1.10.2/themes/base/jquery.ui.all.css">
+
         <link href="assets/main.css" rel="stylesheet" />
     </head>
     <body>
@@ -30,6 +32,7 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class=""><a href="index.php">Home</a></li>
+                <li><a href="try.php" class="app_call_to_action">Try it Now!</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="about.php">About</a></li>
                 <li class="active">
