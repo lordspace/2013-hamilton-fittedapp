@@ -1,3 +1,14 @@
+
+.container-fluid {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .container {
     margin-top:10px;
+}
+
+.app_call_to_action {
+    border: 1px solid #eee;
+    _background: #eee !important;
 }
