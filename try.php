@@ -34,8 +34,8 @@ No, I'm not sure which size fits me best
         </div>
     </div>
 
-    <h2>Questions Step #2</h2>
     <div class="row-fluid app_container">
+        <h2>Questions Step #2</h2>
         <div class="app_question">
             <label for="size-height">Your Height:</label>
             <input type="text" id="size-height" />
