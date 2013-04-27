@@ -32,9 +32,9 @@ No, I'm not sure which size fits me best
                 <label for="q4_3"><input type="radio" name="q4" id="q4_3" /> <span>Tops</span></label>
             </div>
         </div>
-    </div>
 
-    <div class="row-fluid app_container">
+        <br class="clear_both"/>
+        
         <h2>Questions Step #2</h2>
         <div class="app_question">
             <label for="size-height">Your Height:</label>
@@ -70,7 +70,7 @@ No, I'm not sure which size fits me best
 
             <div id="slider-arm" class="slider"></div>
         </div>
-        </p>
+
     </div>
 
     <input type="submit" class="btn-large btn-primary" value="Submit" />
