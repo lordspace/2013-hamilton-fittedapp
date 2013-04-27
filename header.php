@@ -40,11 +40,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="index.php"><img src="assets/logo.png">Fitted</a></a>
+            <a class="brand" href="./"><img src="assets/logo.png">Fitted</a></a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class=""><a href="index.php">Home</a></li>
+                <li class=""><a href="./">Home</a></li>
                 <li><a href="try.php" class="app_call_to_action">Try it Now!</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="about.php">About</a></li>

@@ -55,3 +55,8 @@
     margin-left: 0px;
     background: #eee;
 }
+
+.navbar .nav {
+    float: right;
+    margin: 0;
+}
