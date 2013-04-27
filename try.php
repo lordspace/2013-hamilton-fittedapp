@@ -162,8 +162,9 @@ No, I'm not sure which size fits me best
 		];
         
 		$( "#app-q1" ).autocomplete({
+            minLength: 1,
 			source: availableTags
-		});
+		}).off('blur');
     });
 </script>
 
