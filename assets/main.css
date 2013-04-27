@@ -35,6 +35,14 @@
     margin-right: 15px;
 }
 
+.app_user_question {
+    float: left;
+    min-width: 15%;
+    border: 3px solid #ccc;
+    padding: 5px;
+    margin-right: 15px;
+}
+
 .app_question .slider {
     height: 200px;
 }

@@ -1,37 +1,40 @@
 <?php require_once dirname(__FILE__) . '/header.php'; ?>
 
-Do you know your size well enough to make a purchase?
+<!--Do you know your size well enough to make a purchase?
 Yes, I know which size to buy
 No, I'm not sure which size fits me best
+-->
 
 <form action="POST">
     <div class="row-fluid app_container">
-        <div class="">
+        <h2>Questions Step #1</h2>
+        <div class="app_user_question">
             <label for="app-q1">What brand is it?</label>
             <input type="text" id="app-q1" name="q1" value=""/>
         </div>
 
-        <div class="">
+        <div class="app_user_question">
             <label for="app-q2">What size is it?</label>
             <input type="text" id="app-q2" name="q2" value=""/>
         </div>
 
-        <div class="">
+        <div class="app_user_question">
             <label for="app-q3">What style is it?</label>
             <input type="text" id="app-q3" name="q3" value=""/>
         </div>
 
-        <div class="">
+        <div class="app_user_question">
             <label for="app-q4">What item of clothing is it?</label>
 
             <div id="radio">
-                <input type="radio" name="q4" id="q4_1" checked="checked" /><label for="q4_1">Shirt</label>
-                <input type="radio" name="q4" id="q4_2" /><label for="q4_2">Dress</label>
-                <input type="radio" name="q4" id="q4_3" /><label for="q4_3">Tops</label>
+                <label for="q4_1"><input type="radio" name="q4" id="q4_1" checked="checked" /> <span>Shirt</span></label>
+                <label for="q4_2"><input type="radio" name="q4" id="q4_2" /> <span>Dress</span></label>
+                <label for="q4_3"><input type="radio" name="q4" id="q4_3" /> <span>Tops</span></label>
             </div>
         </div>
     </div>
 
+    <h2>Questions Step #2</h2>
     <div class="row-fluid app_container">
         <div class="app_question">
             <label for="size-height">Your Height:</label>
