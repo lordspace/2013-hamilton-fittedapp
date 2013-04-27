@@ -6,9 +6,33 @@
 
 .container {
     margin-top:10px;
+
+}
+
+.app_container {
+    min-height: 300px;
 }
 
 .app_call_to_action {
     border: 1px solid #eee;
     _background: #eee !important;
+}
+
+.app_center {
+    margin: 0 auto;
+}
+
+.app_vertical_separator {
+    padding-right: 20px;
+    border-right: 2px solid #ccc;
+}
+
+/* overriding bootstrap's stuff */
+.row-fluid {
+    margin-left: 40px;
+}
+
+.app_footer {
+    margin-left: 0px;
+    background: #eee;
 }
