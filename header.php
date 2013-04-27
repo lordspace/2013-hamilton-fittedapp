@@ -22,6 +22,11 @@
 
         <script>document.write('<script src="assets/jquery-ui-1.10.2/ui/jquery-ui.js"><\/script>')</script>
 
+        <script src="assets/jquery-ui-1.10.2/ui/jquery-ui.js"></script>
+        <script src="assets/jquery-ui-1.10.2/ui/jquery-ui.js"></script>
+        <script src="assets/jquery-ui-1.10.2/ui/jquery.ui.widget.js"></script>
+        <script src="assets/jquery-ui-1.10.2/ui/jquery.ui.button.js"></script>
+
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
         <div class="container-fluid">
