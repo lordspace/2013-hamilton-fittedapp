@@ -2,10 +2,10 @@
 
 <div class="row-fluid app_container">
     <div class="app_question">
-        <label for="amount">Your Height:</label>
-        <input type="text" id="amount" />
+        <label for="height">Your Height:</label>
+        <input type="text" id="height" />
 
-        <div id="amount-slider" class="slider"></div>
+        <div id="height-slider" class="slider"></div>
     </div>
     
     <div class="app_question">
@@ -19,7 +19,7 @@
 
 <script>
     $(function() {
-        $("#amount-slider").slider({
+        $("#height-slider").slider({
             orientation: "vertical",
             range: "min",
             min: 5,
@@ -27,11 +27,11 @@
             value: 6,
             step :0.1,
             slide: function(event, ui) {
-                $("#amount").val(ui.value);
+                $("#height").val(ui.value);
             }
         });
         // initial value
-        $("#amount").val($("#amount-slider").slider("value"));
+        $("#height").val($("#height-slider").slider("value"));
 
         $("#slider-bust").slider({
             orientation: "vertical",
