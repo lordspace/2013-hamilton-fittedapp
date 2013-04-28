@@ -77,3 +77,9 @@
 .clear_both {
     clear: both;
 }
+
+.alert {
+    margin-left:10px;
+    margin-right: 10px;
+    min-width: 50%;
+}
