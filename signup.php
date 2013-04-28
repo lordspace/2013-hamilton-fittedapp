@@ -1,7 +1,7 @@
 <?php require_once dirname(__FILE__) . '/header.php'; ?>
 
 <div class="row-fluid app_container">
-    <form name="newUser">
+    <form name="newUser" action="new_user.php">
     	<div class="row">
     		<div class="span2" id="J-labels">
     			<div>Email: </div>
