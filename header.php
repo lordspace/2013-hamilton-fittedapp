@@ -1,7 +1,6 @@
 <?php
 
-session_start();
-
+require_once dirname(__FILE__) . '/config.php';
 
 ?><!DOCTYPE html>
 <html lang="en">

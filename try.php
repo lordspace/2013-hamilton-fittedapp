@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__) . '/header.php';
+require_once dirname(__FILE__) . '/config.php';
 
 $default_data = array(
     'brand' => '',
@@ -9,12 +9,34 @@ $default_data = array(
     'clothing_type' => 'shirt',
 );
 
+$errors = array();
 $step = empty($_REQUEST['step']) ? 0 : intval($_REQUEST['step']);
 $data = empty($_REQUEST['data']) ? array() : $_REQUEST['data'];
 $data = array_map('trim', $data);
 $data = array_merge($default_data, $data);
 
+if (!empty($_POST) && $step > 0) {
+    foreach ($default_data as $field_name => $val) {
+        if (empty($data[$field_name])) {
+            $errors[] = "Invalid/empty value for $field_name";
+        }
+    }
+
+    if (empty($errors)) {
+        $data['step'] = $step;
+        $_SESSION['search_data'] = $data;
+
+        app_redirect('suggestions.php');
+    }
+}
+
+require_once dirname(__FILE__) . '/header.php';
+
 ?>
+
+<?php if (!empty($errors)) : ?>
+    <div class="alert alert-error"><?php echo join("<br/>\n", $errors);?></div>
+<?php endif; ?>
 
 <form id="qform" method="POST">
     <input type="hidden" name="step" value="<?php echo $step; ?>" />
