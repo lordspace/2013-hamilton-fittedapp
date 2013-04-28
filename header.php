@@ -21,6 +21,7 @@
 
         <script src="assets/jquery-ui-1.10.2/jquery-ui-1.10.2.custom.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/main.js"></script>
 
         <div class="container-fluid">
 

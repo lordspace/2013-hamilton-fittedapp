@@ -5,7 +5,7 @@ Yes, I know which size to buy
 No, I'm not sure which size fits me best
 -->
 
-<form action="POST">
+<form id="qform" method="POST">
     <div class="row-fluid app_container">
         <h2>Questions Step #1</h2>
         <div class="app_user_question">
@@ -192,6 +192,14 @@ No, I'm not sure which size fits me best
 		}).off('blur');
 
         $("form:not(.filter) :input:visible:enabled:first").focus();
+
+        var loading_text = "<span class='alert alert-info'>Loading...</span>";
+        
+        $("#qform").submit(function () {
+            $('.btn-primary').after(loading_text);
+
+            return true;
+		});
     });
 </script>
 
