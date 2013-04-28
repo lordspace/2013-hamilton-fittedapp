@@ -54,6 +54,11 @@
     width: 25px;
 }
 
+#J-labels div{
+    margin-bottom: 22px;
+}
+
+
 /* overriding bootstrap's stuff */
 .row-fluid {
     margin-left: 40px;
