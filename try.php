@@ -163,9 +163,6 @@ No, I'm not sure which size fits me best
         // initial value
         $("#size-arm").val($("#slider-arm").slider("value"));
 
-        $("#radio").buttonset();
-
-
         var availableBands = [
 			"Abercrombie",
 			"Tommy Hilfiger",
