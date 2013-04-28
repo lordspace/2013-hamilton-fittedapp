@@ -16,14 +16,21 @@ $data = array_map('trim', $data);
 $data = array_merge($default_data, $data);
 
 if (!empty($_POST) && $step > 0) {
-    foreach ($default_data as $field_name => $val) {
-        if (empty($data[$field_name])) {
-            $errors[] = "Invalid/empty value for $field_name";
+    if ($step == 1) {
+        foreach ($default_data as $field_name => $val) {
+            if (empty($data[$field_name])) {
+                $errors[] = "Invalid/empty value for $field_name";
+            }
         }
     }
 
     if (empty($errors)) {
         $data['step'] = $step;
+
+        if ($step == 2) {
+            $data['brand'] == 'Adidas';
+        }
+
         $_SESSION['search_data'] = $data;
 
         app_redirect('suggestions.php');
