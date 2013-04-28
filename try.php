@@ -1,4 +1,19 @@
-<?php require_once dirname(__FILE__) . '/header.php'; ?>
+<?php
+
+require_once dirname(__FILE__) . '/header.php';
+
+$default_data = array(
+    'brand' => '',
+    'size' => '',
+    'style' => '',
+    'clothing_type' => 'shirt',
+);
+
+$data = empty($_REQUEST['data']) ? array() : $_REQUEST['data'];
+$data = array_map('trim', $data);
+$data = array_merge($default_data, $data);
+
+?>
 
 <!--Do you know your size well enough to make a purchase?
 Yes, I know which size to buy
@@ -10,30 +25,32 @@ No, I'm not sure which size fits me best
         <h2>Questions Step #1</h2>
         <div class="app_user_question">
             <label for="app-q1">What brand is it?</label>
-            <input type="text" id="app-q1" name="q1" value=""/>
+            <input type="text" id="app-q1" name="data[brand]" value="<?php echo $data['brand']; ?>"/>
         </div>
 
         <div class="app_user_question">
             <label for="app-q2">What size is it?</label>
-            <input type="text" id="app-q2" name="q2" value=""/>
+            <input type="text" id="app-q2" name="data[size]" value="<?php echo $data['size']; ?>" />
         </div>
 
         <div class="app_user_question">
             <label for="app-q3">What style is it?</label>
-            <input type="text" id="app-q3" name="q3" value=""/>
+            <input type="text" id="app-q3" name="data[style]" value="<?php echo $data['style']; ?>" />
         </div>
 
         <div class="app_user_question">
-            <label for="app-q4">What item of clothing is it?</label>
+            <label for="q4_1">What item of clothing is it?</label>
 
             <div id="radio">
-                <label for="q4_1"><input type="radio" name="q4" id="q4_1" checked="checked" /> <span>Shirt</span></label>
-                <label for="q4_2"><input type="radio" name="q4" id="q4_2" /> <span>Dress</span></label>
-                <label for="q4_3"><input type="radio" name="q4" id="q4_3" /> <span>Tops</span></label>
+                <label for="q4_1"><input type="radio" name="data[clothing_type]" value="shirt" id="q4_1" 
+                    <?php echo $data['clothing_type'] == 'shirt' ? 'checked="checked"' : ''; ?> /> <span>Shirt</span></label>
+                <!--<label for="q4_2"><input type="radio" name="data[clothing_type]" value="dress" id="q4_2" readonly="readonly" /> <span>Dress</span></label>
+                <label for="q4_3"><input type="radio" name="data[clothing_type]" value="tops" id="q4_3" readonly="readonly" /> <span>Tops</span></label>
+                -->
             </div>
         </div>
 
-        <br class="clear_both"/>
+        <br class="clear_both" />
         <input type="submit" class="btn btn-primary" value="Submit" />
         <br class="clear_both"/>
         
@@ -153,11 +170,10 @@ No, I'm not sure which size fits me best
         // initial value
         $("#size-arm").val($("#slider-arm").slider("value"));
 
-        $("#radio").buttonset();
-
-
         var availableBands = [
 			"Abercrombie",
+			"Adidas",
+			"Guess",
 			"Tommy Hilfiger",
 			"Nothing"
 		];
