@@ -22,7 +22,7 @@ No, I'm not sure which size fits me best
 
 <form id="qform" method="POST">
     <div class="row-fluid app_container">
-        <h2>Questions Step #1</h2>
+        <h2>I know my size</h2>
         <div class="app_user_question">
             <label for="app-q1">What brand is it?</label>
             <input type="text" id="app-q1" name="data[brand]" value="<?php echo $data['brand']; ?>"/>
@@ -54,7 +54,7 @@ No, I'm not sure which size fits me best
         <input type="submit" class="btn btn-primary" value="Submit" />
         <br class="clear_both"/>
         
-        <h2>Questions Step #2</h2>
+        <h2>I want to know my size by entering my dimensions (inches).</h2>
         <div class="app_question">
             <label for="size-height">Your Height:</label>
             <input type="text" id="size-height" />
@@ -173,9 +173,10 @@ No, I'm not sure which size fits me best
         var availableBands = [
 			"Abercrombie",
 			"Adidas",
+			"American Apparel",
+			"Banana Republic",
 			"Guess",
-			"Tommy Hilfiger",
-			"Nothing"
+			"Tommy Hilfiger"
 		];
         
 		$( "#app-q1" ).autocomplete({
@@ -199,6 +200,7 @@ No, I'm not sure which size fits me best
 
         var availableStyles = [
 			"Slim Fit",
+            'Casual',
 			"Relaxed Fit"
 		];
 
