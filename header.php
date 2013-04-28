@@ -76,7 +76,6 @@ session_start();
       </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
-
     <div class="row-fluid">
         <p>&nbsp;</p>
         <p>&nbsp;</p>

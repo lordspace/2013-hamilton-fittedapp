@@ -91,7 +91,7 @@ $data = array_merge($default_data, $data);
             <br class="clear_both"/>
             <input type="submit" class="btn btn-primary" value="Submit" />
         <?php else : ?>
-            <div class="app_user_question0 hero-unit">
+            <div class="app_user_question0 my-hero-unit">
                 <h2>Do you know your size?</h2>
                 <a href="try.php?step=1" class="btn btn-primary">Yes, I know my size</a>
                 <a href="try.php?step=2" class="btn btn-primary">No, I want to give my measurements</a>

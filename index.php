@@ -1,7 +1,7 @@
 <?php require_once dirname(__FILE__) . '/header.php'; ?>
 
 <div class="row-fluid">
-    <div class="hero-unit">
+    <div class="my-hero-unit">
         <h1>What is Fitted?</h1>
         <p>Fitted takes the sizes of the clothes that fit you best and lets you know how you size up in all your other favourite brands!</p>
         <p><a href="try.php" class="btn btn-primary btn-large">Try It Now! &raquo;</a></p>
