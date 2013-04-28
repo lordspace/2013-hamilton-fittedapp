@@ -4,8 +4,7 @@
     <p>
         <h2>Suggestions</h2>
         
-        ....
-
+        <?php echo "<pre>".  var_export($_SESSION, 1) . "</pre>"; ?>
     </p>
 </div>
 
