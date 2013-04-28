@@ -1,4 +1,14 @@
-<?php require_once dirname(__FILE__) . '/header.php'; ?>
+<?php
+
+require_once dirname(__FILE__) . '/header.php';
+
+$data = empty($_REQUEST['data']) ? array() : $_REQUEST['data'];
+$data = array_map('trim', $data);
+
+var_dump($_REQUEST);
+var_dump($data);
+
+?>
 
 <!--Do you know your size well enough to make a purchase?
 Yes, I know which size to buy
@@ -10,26 +20,26 @@ No, I'm not sure which size fits me best
         <h2>Questions Step #1</h2>
         <div class="app_user_question">
             <label for="app-q1">What brand is it?</label>
-            <input type="text" id="app-q1" name="q1" value=""/>
+            <input type="text" id="app-q1" name="data[brand]" value=""/>
         </div>
 
         <div class="app_user_question">
             <label for="app-q2">What size is it?</label>
-            <input type="text" id="app-q2" name="q2" value=""/>
+            <input type="text" id="app-q2" name="data[size]" value=""/>
         </div>
 
         <div class="app_user_question">
             <label for="app-q3">What style is it?</label>
-            <input type="text" id="app-q3" name="q3" value=""/>
+            <input type="text" id="app-q3" name="data[style]" value=""/>
         </div>
 
         <div class="app_user_question">
-            <label for="app-q4">What item of clothing is it?</label>
+            <label for="q4_1">What item of clothing is it?</label>
 
             <div id="radio">
-                <label for="q4_1"><input type="radio" name="q4" id="q4_1" checked="checked" /> <span>Shirt</span></label>
-                <label for="q4_2"><input type="radio" name="q4" id="q4_2" /> <span>Dress</span></label>
-                <label for="q4_3"><input type="radio" name="q4" id="q4_3" /> <span>Tops</span></label>
+                <label for="q4_1"><input type="radio" name="data[clothing_type]" value="shirt" id="q4_1" checked="checked" /> <span>Shirt</span></label>
+                <label for="q4_2"><input type="radio" name="data[clothing_type]" value="dress" id="q4_2" /> <span>Dress</span></label>
+                <label for="q4_3"><input type="radio" name="data[clothing_type]" value="tops" id="q4_3" /> <span>Tops</span></label>
             </div>
         </div>
 
