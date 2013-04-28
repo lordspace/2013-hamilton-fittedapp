@@ -34,6 +34,8 @@ No, I'm not sure which size fits me best
         </div>
 
         <br class="clear_both"/>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+        <br class="clear_both"/>
         
         <h2>Questions Step #2</h2>
         <div class="app_question">
@@ -71,9 +73,9 @@ No, I'm not sure which size fits me best
             <div id="slider-arm" class="slider"></div>
         </div>
 
+        <br class="clear_both"/>
+        <input type="submit" class="btn btn-primary" value="Submit" />
     </div>
-
-    <input type="submit" class="btn-large btn-primary" value="Submit" />
 </form>
 
 <script>
@@ -154,7 +156,7 @@ No, I'm not sure which size fits me best
         $("#radio").buttonset();
 
 
-        var availableTags = [
+        var availableBands = [
 			"Brand 1",
 			"Brand 2",
 			"Brand 3",
@@ -163,8 +165,24 @@ No, I'm not sure which size fits me best
         
 		$( "#app-q1" ).autocomplete({
             minLength: 1,
-			source: availableTags
+			source: availableBands
 		}).off('blur');
+
+        var availableSizes = [
+			"Zero",
+			"Extra Small",
+			"Small",
+			"Medium",
+			"Large",
+			"Extra Large"
+		];
+
+		$( "#app-q2" ).autocomplete({
+            minLength: 1,
+			source: availableSizes
+		}).off('blur');
+
+        $("form:not(.filter) :input:visible:enabled:first").focus();
     });
 </script>
 
