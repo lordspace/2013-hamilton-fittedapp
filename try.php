@@ -157,9 +157,8 @@ No, I'm not sure which size fits me best
 
 
         var availableBands = [
-			"Brand 1",
-			"Brand 2",
-			"Brand 3",
+			"Abercrombie",
+			"Tommy Hilfiger",
 			"Nothing"
 		];
         
@@ -169,17 +168,27 @@ No, I'm not sure which size fits me best
 		}).off('blur');
 
         var availableSizes = [
-			"Zero",
-			"Extra Small",
-			"Small",
-			"Medium",
-			"Large",
-			"Extra Large"
+			"Zero (0)",
+			"Extra Small (XS)",
+			"Small (S)",
+			"Medium (M)",
+			"Large (L)",
+			"Extra Large (XL)"
 		];
 
 		$( "#app-q2" ).autocomplete({
             minLength: 1,
 			source: availableSizes
+		}).off('blur');
+
+        var availableStyles = [
+			"Slim Fit",
+			"Relaxed Fit"
+		];
+
+		$( "#app-q3" ).autocomplete({
+            minLength: 1,
+			source: availableStyles
 		}).off('blur');
 
         $("form:not(.filter) :input:visible:enabled:first").focus();
